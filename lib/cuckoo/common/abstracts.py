@@ -63,10 +63,6 @@ class Machinery(object):
         # Database pointer.
         self.db = Database()
 
-        # Machine table is cleaned to be filled from configuration file
-        # at each start.
-        self.db.clean_machines()
-
     def set_options(self, options):
         """Set machine manager options.
         @param options: machine manager options dict.
